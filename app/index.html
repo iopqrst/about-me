@@ -9,10 +9,12 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <script src=""></script>
+        <!-- <link rel="stylesheet" href="assets/plugins/onepage-scroll.css"> -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -22,17 +24,132 @@
         <![endif]-->
 
 
-        <div class="container">
-            Hello Hello
+        <h1 class="pageTitle animated tada">123</h1>
+        <section id="intro">
+            <div class="inner">
+                <div class="leftBracket" style="left: -50px; opacity: 1;"></div>
+                <div class="rightBracket"></div>
+                <h2 class="animated fadeInLeftBig">简介</h2>
+                <div class="text">
+                    <p>我叫<strong>张玉炎</strong>，另一个更常用的名字是<strong>三忌</strong></p>
+                    <p>我是一名<strong>python攻城师</strong>，目前供职于<strong>华清</strong>.</p>
+                    <p>如果有项目想<strong>找我合作</strong>（业余时间内）<br/><strong>Or</strong>只是想跟我<strong>交个朋友</strong>，欢迎随时跟我联系:)</p>
+                </div>
+                <div class="contact">
+                    <h3>如何找到我</h3>
+                    <ul>
+                        <li><i class="icon" id="icon_mobile"></i>+86 183 1016 1064</li>
+                        <li><a href="http://weibo.com/u/2751487695" target="_blank"><i class="icon" id="icon_weibo"></i>-三忌八两</a></li>
+                        <li><a href="mailto:z858570636@gmail.com" target="_blank"><i class="icon" id="icon_email"></i>z858570636@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="scrollDown">
+                    <span class="down"></span>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="inner">
+                <h2 class="animated">技能</h2>
+                <div class="legend">
+                    <h3 class="animated">图例:</h3>
+                    <ul class="skillsList">
+                        <li class="js animated">Python</li>
+                        <li class="css animated">WebFront</li>
+                        <li class="html animated ">Database</li>
+                        <li class="others animated">Others</li>
+                    </ul>
+                </div>
+                <div id="skillsArc"></div>
+            </div>
+        </section>
+        <section id="experiences">
+            <div class="inner">
+                <h2 class="animated">工作/学习经历</h2>
+                <div id="experienceTimeLine"></div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="inner">
+                <h2 class="animated">做过的东西</h2>
 
-        </div>
+                <div>
+                    <table class="projectTable">
+                        <th colspan="2"><strong>点亮运维平台</strong></th>
+                        <tr>
+                            <td width="180px">项目描述:</td>
+                            <td class="projectTd">让运维工作变得简单,效率,安全，实现web界面对服务器进行运维管理，包括运维，监控，预警，管理。</td>
+                        </tr>  
+                        <tr>
+                            <td>工作内容:</td>
+                            <td class="projectTd">用户方面功能的实现，日常开发工作安排。</td>
+                        </tr>
+                        <tr>
+                            <td>SkillTag:</td>
+                            <td class="projectTd">Django、MySQL、Html+CSS、JavaScript、JQuery、Ajax</td>
+                        </tr> 
+                        <tr>
+                            <td>URL:</td>
+                            <td class="projectTd">内网</td>
+                        </tr>
+                    </table>
+
+                    <table class="projectTable">
+                        <th colspan="2"><strong>牧业信息网站</strong></th>
+                        <tr>
+                            <td width="180px">项目描述:</td>
+                            <td class="projectTd">力求为畜牧产业提供最前沿的行业信息权威发布平台。</td>
+                        </tr>  
+                        <tr>
+                            <td>工作内容:</td>
+                            <td class="projectTd">用户中心、后台管理。</td>
+                        </tr>
+                        <tr>
+                            <td>SkillTag:</td>
+                            <td class="projectTd">Django、MySQL、Html+CSS、JavaScript、JQuery、Ajax、Git</td>
+                        </tr> 
+                        <tr>
+                            <td>URL:</td>
+                            <td class="projectTd">Offine</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="final">
+            <div class="inner">
+                <h2 class="animated">Final</h2>
+                <div class="text">
+                    <p>我现在住在<strong>北京</strong>，非常乐于结交各种各样的<strong>朋友</strong>.<p/>
+                    <p>如果你不在北京也没关系，我相信<strong>线上交流</strong>已经能解决大部分问题.</p>
+                    <p>最近，我正在做一些有关<strong>Web开发</strong>的工作.</p>
+                    <p>十分期待能在业余时间尝试一些有趣的项目，认识更多有趣的人.</p>
+                    <p>想联系我？回到<strong class="backTop">简介</strong>.</p>
+                    <p class="download">点击<a class="here" href="/media/me/zhangyuyan.pdf" target="_blank">这里</a>下载PDF，如果你只想要一个压缩版（.doc)，点击<a class="here" href="/media/me/zhangyuyan.doc" target="_blank">这里</a>. Thanks.</p>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="inner">
+                <p class="copyright">Designed and Developed by Yuyan Zhang（张玉炎）. Copyright © 2013 All rights reserved.</p>
+            </div>
+<meta property="wb:webmaster" content="d86d373dd99a7f1e" />
+
+        </footer>
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/raphael/raphael.js"></script>
+        <script src="../bower_components/jquery-migrate/jquery-migrate.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
 
         <!-- build:js scripts/plugins.js -->
         <script src="../bower_components/bootstrap/js/affix.js"></script>
@@ -50,7 +167,12 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script src="assets/plugins/jquery.onepage-scroll.min.js"></script>
+        <script src="assets/plugins/jquery.easing.1.3.min.js"></script>
+
+        <!-- // <script src="scripts/main.js"></script> -->
+        <script src="scripts/resume.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>

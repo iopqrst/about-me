@@ -1,4 +1,0 @@
-blogger
-=======
-
-personal website

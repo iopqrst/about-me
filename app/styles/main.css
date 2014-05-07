@@ -201,8 +201,9 @@ h3 {
 
 #intro .contact li:hover,
 #intro .contact a:hover {
+    cursor:pointer;
     color: #285AA9;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #intro .scrollDown {

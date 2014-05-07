@@ -1,4 +1,4 @@
 blogger
 =======
 
-personal blogger
+personal website

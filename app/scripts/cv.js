@@ -294,11 +294,11 @@ var CV = {
         }
         var e = new Raphael("experienceTimeLine", 900, 680),
         t = [
-                [200, 25, "#97BE0D", "2006.09 - 2010.07，哈尔滨", "计算机科学与技术 本科", ""], 
-                [300, 20, "#88B8E6", "2010.09 - 2011.10，LONDON", "Imperial College", "Msc Advanced Computing"], 
+                [200, 25, "#97BE0D", "2006.09 - 2010.07，哈尔滨", " 本科", "计算机科学与技术"], 
+                [300, 20, "#97BE0D", "2010.09 - 2011.10，LONDON", "Imperial College", "Msc Advanced Computing"], 
                 [400, 10, "#88B8E6", "2011.11 - 2013.04，北京 杭州", "爱狗网", "Java工程师"], 
                 [500, 10, "#88B8E6", "2013.05 - 2013.11，哈尔滨", "FancyFruit甜品店", ""], 
-                [600, 20, "#989898", "2013.12 - 哈尔滨，北京", "宝利明威", "Python&&前端"]
+                [600, 20, "#88B8E6", "2013.12 - 哈尔滨，北京", "宝利明威", "Python&&前端"]
             ],
         n = [["#97BE0D", 400, "学习"], ["#88B8E6", 530, "工作经历"]],
         r = "Hiragino Sans GB, Microsoft YaHei, sans-serif";

@@ -31,7 +31,7 @@
             <div class="inner">
                 <div class="leftBracket" style="left: -50px; opacity: 1;"></div>
                 <div class="rightBracket"></div>
-                <h2 class="animated fadeInLeftBig">yoyoyo</h2>
+                <h2 class="animated fadeInLeftBig">Self Intro</h2>
                 <div class="text">
                     <p>佛法不二，佛不分<strong>是非</strong>，不分<strong>喜悲</strong>。</p>
                     <p>佛见有缘的教他<strong>度化</strong>，见无缘的教他<strong>轮回</strong>。</p>
@@ -64,10 +64,95 @@
         </div>
     </section>
     <section>
-        <p>这是第二页</p>
+        <div id="skills">
+            <div class="inner">
+                <h2 class="animated">Skills</h2>
+                <div class="legend">
+                    <h3 class="animated">图例:</h3>
+                    <ul class="skillsList">
+                        <li class="js animated">Python</li>
+                        <li class="css animated">WebFront</li>
+                        <li class="html animated ">Database</li>
+                        <li class="others animated">Others</li>
+                    </ul>
+                </div>
+                <div id="skillsArc"></div>
+            </div>
+        </div>
     </section>
     <section>
-        <p>这是第三页</p>
+        <div class="inner">
+            <h2 class="animated" style="position: absolute;line-height: 2.5em;">Expeience</h2>
+            <div id="experienceTimeLine"></div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <h2 class="animated">Main Projects</h2>
+            <div>
+                <table class="projectTable">
+                    <th colspan="2"><i class="fa fa-archive"></i><strong>PolySpider</strong></th>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> Python(v2.7) and Scrapy(v0.20.2) are used in this project, which is mainly designed for Android app synchronizing and categorizing by focusing on grabing data from Android Markets.</td>
+                    </tr>  
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> Maintained via Github(Private Repository). Over 10 million Android Apps has been grabbed and it has filtered and categorized into 1 million different apps.</td>
+                    </tr>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> Python, WebPy, Scrapy, Redis, Supervisor, BadiYun, UpYun</td>
+                    </tr> 
+                </table>
+
+                <table class="projectTable">
+                    <th colspan="2"><i class="fa fa-archive"></i><strong>PolyTechDocs</strong></th>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> PolyTechDocs是一个文档协同撰写项目。</td>
+                    </tr>  
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> 采用了Jekyll模版，使得可以在忽略字体大小样式，代码格式等方面的情况下进行专注于内容的高效文档撰写。支持MarkDown、Textile、Liquid、HTML&CSS等多种方式进行文档撰写。同时利用GitHub提供的版本控制模式实现多人协同高效开发。</td>
+                    </tr>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> Github Pages, Jekyll, Markdown, Pygments</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <h2 class="animated">Main Projects</h2>
+            <div>
+                <table class="projectTable">
+                    <th colspan="2"><i class="fa fa-archive"></i><strong>PolyEMM</strong></th>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> PolyEMM是一个采用Python开发的企业移动管理项目。</td>
+                    </tr>  
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> 企业移动管理Python版Server端的实现</td>
+                    </tr>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> Tornado, Mako, MongoDB, Nose, Getui, Jasmine</td>
+                    </tr> 
+                </table>
+            </div>
+            <div>
+                <table class="projectTable">
+                    <th colspan="2"><i class="fa fa-archive"></i><strong>前端重构项目</strong></th>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> 实现原有Java项目中的Controller层和View层业务从后台的剥离。</td>
+                    </tr>  
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> 采用Backend Server -- Frontend Server -- Frontend的架构模式，将整个项目中的Controller层和View层分离出来构建单独的前端项目，使得后台开发更专注于数据逻辑和性能及测试，前端和后台通过RESTful API进行交互，各自可以独立开发，并可以进行很好的整合。另外提高了业务需求的定制型开发的灵活性。</td>
+                    </tr>
+                    <tr>
+                        <td class="projectTd"> <i class="fa fa-star"></i> NodeJS, AngularJS, MongoDB, Express, Ace Template, Passport, grunt, bower, KISSY, Karma</td>
+                    </tr> 
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="pageTitle animated" onclick="$('.main').moveTo(1)" style="cursor:pointer;padding-top: 20%;">Contact Me</a></h1>
     </section>
 </div>
 
@@ -97,8 +182,9 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/jquery.onepage-scroll.min.js"></script>
+        <script src="scripts/jquery.onepage-scroll.js"></script>
         <script src="scripts/jquery.easing.1.3.min.js"></script>
+        <script src="scripts/cv.js"></script>
 
         <script src="scripts/main.js"></script>
         <!-- endbuild -->

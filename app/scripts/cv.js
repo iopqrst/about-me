@@ -1,4 +1,4 @@
-var NemoCV = {
+var CV = {
     random: function(e, t) {
         return Math.floor(Math.random() * (t - e + 1) + e)
     },
@@ -34,7 +34,7 @@ var NemoCV = {
             });
             f.push(n),
             setTimeout(function() {
-                var t = e.text(703, 250, "{ 2 年 }\npython开发").attr({
+                var t = e.text(703, 250, "{ Empty }\nStacker").attr({
                     "font-size": 22,
                     fill: "#fff",
                     "font-family": s
@@ -104,14 +104,14 @@ var NemoCV = {
         {
             kind: "Others",
             score: "65",
-            color: "#EDEBEE"
+            color: "#998566"
         }],
         h = e.set(),
         p = {
-            "arc-python": [[300, "Django"], [250, "Twisted"], [150, "BeautifulSoup"], [140, "Scrapy"], [120, "scapy"]],
-            "arc-database": [[300, "MySQL"], [200, "PostgreSQL"], [100, "Access"]],
-            "arc-webfront": [[300, "HTML"], [250, "CSS"], [200, "JavaScript"], [100, "JQuery"], [150, "Ajax"], [200, "Twitter Bootstrap"]],
-            "arc-others": [[100, "C"], [190, "VisualBasic"], [90, "Git"], [70, "SVN"]]
+            "arc-python": [[250, "Tonado"], [200, "Web.py"], [130, "Autobahn"], [300, "Scrapy"], [110, "Bottle"]],
+            "arc-database": [[250, "MongoDB"], [300, "Reids"], [150, "MySQL"]],
+            "arc-webfront": [[250, "AngularJS"], [300, "Coffeescript"], [3000, "JavaScript"], [200, "NodeJS"], [210, "Grunt"], [270, "Bower"], [200, "Sencha"]],
+            "arc-others": [[250, "Git"], [200, "Yoeman"], [300, "Markdown"], [280, "Evernote"]]
         },
         d = 30,
         v = 550,
@@ -293,10 +293,16 @@ var NemoCV = {
             }
         }
         var e = new Raphael("experienceTimeLine", 900, 680),
-        t = [[200, 25, "#97BE0D", "2006.09 - 2010.07，北京，昌平", "会计 本科 (北京外事研事学院)", ""], [300, 20, "#88B8E6", "2010.03 - 2011.12", "昆明天利和药业有限公司", "会计"], [400, 10, "#88B8E6", "2012.04 - 2012.08", "北京迎福时代数码科技有限公司", "网站后端开发"], [500, 10, "#88B8E6", "2012.08 - 2012.12", "华夏正牧（北京）科技有限责任公司", "网站开发，负责公司网站建设和维护"], [600, 20, "#989898", "2013.02 - 2013.12", "北京华清泰和科技有限公司", ""]],
+        t = [
+                [200, 25, "#97BE0D", "2006.09 - 2010.07，哈尔滨", "计算机科学与技术 本科", ""], 
+                [300, 20, "#88B8E6", "2010.09 - 2011.10，LONDON", "Imperial College", "Msc Advanced Computing"], 
+                [400, 10, "#88B8E6", "2011.11 - 2013.04，北京 杭州", "爱狗网", "Java工程师"], 
+                [500, 10, "#88B8E6", "2013.05 - 2013.11，哈尔滨", "FancyFruit甜品店", ""], 
+                [600, 20, "#989898", "2013.12 - 哈尔滨，北京", "宝利明威", "Python&&前端"]
+            ],
         n = [["#97BE0D", 400, "学习"], ["#88B8E6", 530, "工作经历"]],
         r = "Hiragino Sans GB, Microsoft YaHei, sans-serif";
-        e.text(0, 95, "1988年9月，出生").attr({
+        e.text(0, 95, "1987年7月，出生").attr({
             "font-size": 16,
             fill: "#898989",
             "font-family": r,
@@ -441,131 +447,3 @@ var NemoCV = {
         $("#galleryCursor").fadeIn(2e3)
     }
 };
-$(function() {
-    var e = ["intro", "skills", "experiences", "projects", "final"],
-    t = [!1, !1, !1, !1, !1],
-    n = [],
-    r = 0,
-    i = $(window).height();
-    for (var s = 0; s < e.length; s++) n[s] = $("#" + e[s]).offset().top;
-    var o = [];
-    o[0] = function() {
-        $.browser.msie && $("#" + e[0] + " h2").animate({
-            opacity: 1
-        },
-        2e3),
-        NemoCV.drawIcons(),
-        $(".leftBracket").animate({
-            left: "-50",
-            opacity: 1
-        },
-        1500),
-        $(".rightBracket").animate({
-            right: "-50",
-            opacity: 1
-        },
-        1500),
-        $("#intro .text, #intro .contact").fadeIn(2e3),
-        $("#intro .down").queue(function(e) {
-            $(this).animate({
-                top: "30px",
-                opacity: .7
-            },
-            800).delay(500).animate({
-                top: "0px",
-                opacity: 1
-            },
-            800),
-            $(this).queue(arguments.callee),
-            e()
-        }).click(function() {
-            r++,
-            $("html, body").stop().animate({
-                scrollTop: n[r] + 100
-            },
-            2e3, "easeOutBack")
-        }),
-        $("#sideNav .down").queue(function(e) {
-            $(this).animate({
-                marginTop: "35px",
-                opacity: .7
-            },
-            800).delay(500).animate({
-                marginTop: "10px",
-                opacity: 1
-            },
-            800),
-            $(this).queue(arguments.callee),
-            e()
-        }).click(function() {
-            r++,
-            $("html, body").stop().animate({
-                scrollTop: n[r] + 200
-            },
-            1e3, "easeOutBack")
-        }),
-        $("#sideNav .up").click(function() {
-            r--;
-            var e = r == 0 ? 0 : n[r] + 150;
-            $("html, body").stop().animate({
-                scrollTop: e
-            },
-            1e3, "easeOutBack")
-        })
-    },
-    o[1] = function() {
-        $(".legend h3").addClass("fadeInUp"),
-        $(".skillsList li").each(function(e) {
-            var t = $(this);
-            setTimeout(function() {
-                t.addClass("fadeInLeftBig")
-            },
-            e * 200)
-        }),
-        $(".skillsList li").hover(function() {
-            var e = "arc-" + $(this).text().toLowerCase();
-            e = e.replace(/&/, "_"),
-            $("#" + e).trigger("mouseover")
-        },
-        function() {
-            var e = "arc-" + $(this).text().toLowerCase();
-            e = e.replace(/&/, "_"),
-            $("#" + e).trigger("mouseout")
-        }),
-        NemoCV.drawSkillsArc()
-    },
-    o[2] = function() {
-        NemoCV.drawExperienceTimeLine()
-    },
-    o[3] = function() {
-        NemoCV.drawProjectsGallery(),
-        $("#projectsGallery").addClass("bounceInDown"),
-        $("#projectIntro table").eq(0).fadeIn(2e3)
-    },
-    o[4] = function() {
-        $("#final .text").animate({
-            opacity: 1
-        },
-        2e3),
-        $("#final .backTop").click(function() {
-            $("html, body").stop().animate({
-                scrollTop: 0
-            },
-            2e3, "easeOutBack")
-        })
-    },
-    $(window).scroll(function() {
-        var s = $(this).scrollTop();
-        for (var u = e.length; u > 0; u--) if (s > n[u] - i + 300) {
-            t[u] || ($("#" + e[u] + " h2").addClass("fadeInLeftBig"), $.browser.msie && $("#" + e[u] + " h2").animate({
-                opacity: 1
-            },
-            2e3), o[u](), t[u] = !0);
-            break
-        }
-        r = u,
-        s > n[1] - 100 ? $("#sideNav").fadeIn(1e3) : ($("#sideNav").fadeOut(1e3), r = 0)
-    }),
-    o[0](),
-    t[0] = !0
-})

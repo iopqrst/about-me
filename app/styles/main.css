@@ -228,8 +228,6 @@ h3 {
 /* ------ Startskills styles 
 -----------------------------------------------*/
 #skills {
-    height:600px;
-    background: url(/media/thumb2/bg-divider.jpg) repeat-x left top white;
     padding-bottom: 50px;
 }
 
@@ -275,7 +273,7 @@ h3 {
 }
 
 .skillsList .others {
-    background:#BEDBE9;}
+    background:#998566;}
 
 #skillsArc {
     float:left;
@@ -350,7 +348,8 @@ h3 {
 }
 
 .projectTable .projectTd{
-    font-size: 0.8em;
+    font-size: 0.6em;
+    padding-left: 30px;
     /*width: 3500px;*/
 }
 /* End projects styles */
@@ -457,10 +456,10 @@ path, circle {
 /* ------ Start animate styles
 -----------------------------------------------*/
 .animated {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;

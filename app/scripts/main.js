@@ -7,10 +7,51 @@ $(function() {
     animationTime: 1000,
     pagination: true,
     updateURL: false,
-    beforeMove: function() {},
-    afterMove: function() {},
     loop: false,
     keyboard: true,
-    responsiveFallback: false
+    responsiveFallback: false,
+    beforeMove: function(index, next_el) {
+      var drawSkills;
+      if (index === 2 && next_el.find('h2').attr('class') === "animated") {
+        next_el.find('h2').addClass('fadeInLeftBig');
+        next_el.find('h3').addClass('fadeInUp');
+        next_el.find(".skillsList li").addClass("fadeInLeftBig");
+        next_el.find(".skillsList li").hover(function() {
+          var e;
+          e = "arc-" + $(this).text().toLowerCase();
+          $("#" + e).trigger("mouseover");
+        }, function() {
+          var e;
+          e = "arc-" + $(this).text().toLowerCase();
+          $("#" + e).trigger("mouseout");
+        });
+        drawSkills = function() {
+          var e;
+          e = "arc-" + $(this).text().toLowerCase();
+          e = e.replace(/&/, "_");
+          $("#" + e).trigger("mouseout");
+          CV.drawSkillsArc();
+        };
+        drawSkills();
+      }
+      if (index === 3 && next_el.find('h2').attr('class') === "animated") {
+        next_el.find("h2").addClass('fadeInLeftBig');
+        CV.drawExperienceTimeLine();
+      }
+      if (index === 4 && next_el.find('h2').attr('class') === "animated") {
+        next_el.find("h2").addClass('fadeInLeftBig');
+      }
+      if (index === 5 && next_el.find("h2").attr('class') === "animated") {
+        next_el.find("h2").addClass('fadeInLeftBig');
+      }
+      if (index === 6) {
+        next_el.find("h1").removeClass('tada');
+        setTimeout(function() {
+          next_el.find("h1").addClass('tada');
+          return console.log(next_el.find("h1").attr("class"));
+        }, 500);
+      }
+    },
+    afterMove: function(index, next_el) {}
   });
 });

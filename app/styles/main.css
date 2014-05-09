@@ -47,6 +47,7 @@ h1 {
 }
 
 h2 {
+    font-family:'Cabin Sketch', arial, sans-serif;
     font-size: 3em;
     line-height: 3em;
     font-weight: normal;
@@ -159,7 +160,6 @@ h3 {
     width: 55px;
     height: 200px;
     opacity: 0;
-    background: url(/media/thumb2/brackets.png);
 }
 
 #intro .leftBracket {
@@ -218,7 +218,6 @@ h3 {
     width: 64px;
     height: 70px;
     cursor: pointer;
-    background: url(/media/thumb2/blue_arrow_down.png);
     left: 458px;
 }
 
@@ -348,8 +347,8 @@ h3 {
 }
 
 .projectTable .projectTd{
-    font-size: 0.6em;
-    padding-left: 30px;
+    font-size: 0.5em;
+    padding-left: 50px;
     /*width: 3500px;*/
 }
 /* End projects styles */

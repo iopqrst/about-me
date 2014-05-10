@@ -2,6 +2,7 @@
 <html class="no-js">
 <!--
     该页面借鉴了张玉炎同学个人网站的Skills和Experience部分，设计的非常不错，很喜欢
+    该页面用到了王子墨同学开发的jquery.coffee，用来显示漂浮的标签
     该页面采用了Rapheal, onepage-scroll，利用bower进行管理
     采用Grunt进行项目管理和发布
     该页面托管在Github上
@@ -34,6 +35,7 @@
         <![endif]-->
 
 <div class="main">
+    <div class="coffee" style="width: 100%;margin: 500px 50px 50px auto;position: fixed;"> </div>
     <section>
         <h1 class="pageTitle animated tada">About Me</h1>
         <div id="intro">
@@ -192,6 +194,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/jquery.onepage-scroll.js"></script>
         <script src="scripts/jquery.easing.1.3.min.js"></script>
+        <script src="scripts/jquery.coffee.js"></script>
         <script src="scripts/cv.js"></script>
 
         <script src="scripts/main.js"></script>

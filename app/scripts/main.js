@@ -54,4 +54,5 @@ $(function() {
     },
     afterMove: function(index, next_el) {}
   });
+  $('div.coffee').coffee();
 });

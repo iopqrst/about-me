@@ -54,4 +54,5 @@ $ ->
 
       afterMove: (index, next_el) ->
    }
+   $('div.coffee').coffee()
    return

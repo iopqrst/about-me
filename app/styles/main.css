@@ -259,6 +259,10 @@ h3 {
     opacity: 0;
 }
 
+.skillsList li:hover {
+    background: black;
+}
+
 .skillsList .js {
     background:#97BE0D;
 }

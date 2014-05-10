@@ -59,6 +59,10 @@ h3 {
     font-size: 1.5em;
 }
 
+img[src='http://icon.cnzz.com/img/pic1.gif'] {
+    display: none;
+}
+
 .inner {
     width: 980px;
     margin: 0 auto;

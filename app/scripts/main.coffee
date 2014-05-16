@@ -52,7 +52,7 @@ $ ->
             , 500
          return
 
-      afterMove: (index, next_el) ->
+      # afterMove: (index, next_el) ->
    }
    $('div.coffee').coffee()
    return

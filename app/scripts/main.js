@@ -51,8 +51,7 @@ $(function() {
           return console.log(next_el.find("h1").attr("class"));
         }, 500);
       }
-    },
-    afterMove: function(index, next_el) {}
+    }
   });
   $('div.coffee').coffee();
 });

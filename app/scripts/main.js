@@ -44,7 +44,10 @@ $(function() {
       if (index === 5 && next_el.find("h2").attr('class') === "animated") {
         next_el.find("h2").addClass('fadeInLeftBig');
       }
-      if (index === 6) {
+      if (index === 6 && next_el.find("h2").attr('class') === "animated") {
+        next_el.find("h2").addClass('fadeInLeftBig');
+      }
+      if (index === 7) {
         next_el.find("h1").removeClass('tada');
         setTimeout(function() {
           next_el.find("h1").addClass('tada');

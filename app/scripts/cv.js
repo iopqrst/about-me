@@ -34,7 +34,7 @@ var CV = {
             });
             f.push(n),
             setTimeout(function() {
-                var t = e.text(703, 250, "{ Empty }\nStacker").attr({
+                var t = e.text(703, 250, "{ Full }\nStacker").attr({
                     "font-size": 22,
                     fill: "#fff",
                     "font-family": s
@@ -87,18 +87,18 @@ var CV = {
         f.push(u),
         f.push(a);
         var c = [{
-            kind: "Python",
-            score: "65",
+            kind: "Java",
+            score: "75",
             color: "#97BE0D"
         },
         {
             kind: "WebFront",
-            score: "80",
+            score: "70",
             color: "#D84F5F"
         },
         {
             kind: "Database",
-            score: "45",
+            score: "50",
             color: "#88B8E6"
         },
         {
@@ -108,10 +108,10 @@ var CV = {
         }],
         h = e.set(),
         p = {
-            "arc-python": [[250, "Tonado"], [200, "Web.py"], [130, "Autobahn"], [300, "Scrapy"], [110, "Bottle"]],
-            "arc-database": [[250, "MongoDB"], [300, "Reids"], [150, "MySQL"]],
-            "arc-webfront": [[200, "AngularJS"], [300, "Coffeescript"], [230, "JavaScript"], [150, "NodeJS"], [210, "Grunt"], [270, "Bower"], [140, "Sencha"]],
-            "arc-others": [[200, "Git"], [210, "Yoeman"], [280, "Markdown"], [260, "Evernote"]]
+            "arc-java": [[300, "Struts1/2"], [220, "Hibernate/Mybatis"], [200, "Spring/SpringMVC"], [110, "Beetl/FreeMarker/Velocity"], [180, "jfinal"],[80, "Maven"],[80, "Lucene"]],
+            "arc-database": [[250, "Mysql"], [200, "Oracle"], [150, "MongoDB"], [300, "Linux"]],
+            "arc-webfront": [[230, "JavaScript/jQuery"], [150, "NodeJS/Express/jade"],[100, "AngularJS"], [150, "Coffeescript"], [210, "Grunt"], [210, "Bower"], [120, "Bootstrap"],[210, "Yoeman"],[100,"MUI/APICloud"]],
+            "arc-others": [[300, "SVN/GIT"], [180, "MindMap"], [250, "Markdown"]]
         },
         d = 30,
         v = 550,
@@ -294,15 +294,16 @@ var CV = {
         }
         var e = new Raphael("experienceTimeLine", 900, 680),
         t = [
-                [200, 15, "#97BE0D", "2006.09 - 2010.07，哈尔滨", "哈尔滨工程大学 本科", "计算机科学与技术"], 
-                [300, 23, "#97BE0D", "2010.09 - 2011.10，LONDON", "Imperial College", "Msc Advanced Computing"], 
-                [400, 20, "#88B8E6", "2011.11 - 2013.04，北京 杭州", "爱狗网", "Java工程师"], 
-                [500, 10, "#88B8E6", "2013.05 - 2013.11，哈尔滨", "FancyFruit甜品店", ""], 
-                [600, 22, "#88B8E6", "2013.12 - 哈尔滨，北京", "宝利明威", "Python&&前端"]
+                //[200, 10, "#97BE0D", "2007.09 - 2008.07，县一中", "补习，考场失利，放弃大学", ""], 
+				//[280, 14, "#97BE0D", "2008.09 - 2010.03，软件培训", "", ""],
+				[200, 14, "#97BE0D", "2006.09 - 2010.03，山西理工", "计算机信息科学与技术", ""],
+                [350, 23, "#88B8E6", "2010.5 - 2011.10，上海", "上海帜讯信息科技有限公司", "Java工程师"], 
+                [450, 20, "#88B8E6", "2011.11 - 2013.04，北京", "外包华为（软通）", "Java工程师&&前端"], 
+                [550, 26, "#88B8E6", "2013.05 - 至今，北京", "百生康健康科技", "Java&&前端"]
             ],
         n = [["#97BE0D", 400, "学习"], ["#88B8E6", 530, "工作经历"]],
         r = "Hiragino Sans GB, Microsoft YaHei, sans-serif";
-        e.text(0, 95, "1987年7月，出生").attr({
+        e.text(0, 95, "1988年1月，出生").attr({
             "font-size": 16,
             fill: "#898989",
             "font-family": r,

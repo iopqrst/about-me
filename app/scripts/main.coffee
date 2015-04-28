@@ -40,12 +40,15 @@ $ ->
          #第四页
          if index is 4 and next_el.find('h2').attr('class') is "animated"
             next_el.find("h2").addClass 'fadeInLeftBig'
+			next_el.find("div").addClass 'fadeInUpBig'
          #第五页
          if index is 5 and next_el.find("h2").attr('class') is "animated"
             next_el.find("h2").addClass 'fadeInLeftBig'
+			next_el.find("div").addClass 'flipInY'
          #第六页
          if index is 6 and next_el.find("h2").attr('class') is "animated"
             next_el.find("h2").addClass 'fadeInLeftBig'
+			next_el.find("div").addClass 'a-rotatein'
          #第七页
          if index is 7
             next_el.find("h1").removeClass 'tada'

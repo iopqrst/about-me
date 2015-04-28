@@ -4,7 +4,7 @@ $(function() {
   $(".main").onepage_scroll({
     sectionContainer: "section",
     easing: "ease",
-    animationTime: 1000,
+    animationTime: 600,
     pagination: true,
     updateURL: false,
     loop: false,
@@ -40,12 +40,15 @@ $(function() {
       }
       if (index === 4 && next_el.find('h2').attr('class') === "animated") {
         next_el.find("h2").addClass('fadeInLeftBig');
+		next_el.find("div").addClass('fadeInUpBig');
       }
       if (index === 5 && next_el.find("h2").attr('class') === "animated") {
         next_el.find("h2").addClass('fadeInLeftBig');
+		next_el.find("div").addClass('flipInY');
       }
       if (index === 6 && next_el.find("h2").attr('class') === "animated") {
         next_el.find("h2").addClass('fadeInLeftBig');
+		next_el.find("div").addClass('a-rotatein');
       }
       if (index === 7) {
         next_el.find("h1").removeClass('tada');

@@ -110,7 +110,7 @@ var CV = {
         p = {
             "arc-java": [[300, "Struts1/2"], [220, "Hibernate/Mybatis"], [200, "Spring/SpringMVC"], [110, "Beetl/FreeMarker/Velocity"], [180, "jfinal"],[80, "Maven"],[80, "Lucene"]],
             "arc-database": [[250, "Mysql"], [200, "Oracle"], [150, "MongoDB"]],
-            "arc-webfront": [[230, "JavaScript/jQuery"], [150, "NodeJS/Express/jade"],[100, "AngularJS"], [210, "Grunt/Bower/Yeoman"], [210, "Bower"], [120, "Bootstrap"],[100,"MUI/APICloud"]],
+            "arc-webfront": [[230, "JavaScript/jQuery"], [150, "NodeJS/Express/jade"],[100, "AngularJS"], [210, "Grunt/Bower/Yeoman"], [120, "Bootstrap"],[100,"MUI/APICloud"]],
             "arc-others": [[300, "Linux"],[270, "SVN/GIT"], [180, "MindMap"], [220, "Markdown"]]
         },
         d = 30,
